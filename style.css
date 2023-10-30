@@ -1,30 +1,90 @@
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
 }
 .container .section-1 {
   background-color: hsl(31, 77%, 52%);
 }
+.container .section-1 .submitBtn {
+  color: hsl(31, 77%, 52%);
+}
 .container .section-2 {
   background-color: hsl(184, 100%, 22%);
 }
+.container .section-2 .submitBtn {
+  color: hsl(184, 100%, 22%);
+}
 .container .section-3 {
   background-color: hsl(179, 100%, 13%);
+}
+.container .section-3 .submitBtn {
+  color: hsl(179, 100%, 13%);
 }
 .container .section-1,
 .container .section-2,
 .container .section-3 {
   font-family: "Big Shoulders Display", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: start;
+  height: 300px;
+  width: 168px;
+  padding: 45px;
+}
+.container .section-1 .sectionImg,
+.container .section-2 .sectionImg,
+.container .section-3 .sectionImg {
+  height: 48px;
+  width: 48px;
+  margin: 10px 0;
+}
+.container .section-1 .title,
+.container .section-2 .title,
+.container .section-3 .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
 }
 .container .section-1 .section-content,
 .container .section-2 .section-content,
 .container .section-3 .section-content {
   font-family: "Lexend Deca", sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
+  margin: 5px 0 20px 0;
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container .section-1 .submitBtn,
+.container .section-2 .submitBtn,
+.container .section-3 .submitBtn {
+  margin: 40px 0px 0px 0px;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 700;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
